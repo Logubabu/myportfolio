@@ -14,7 +14,7 @@ const Home: FC<HomeProps> = () => (
     <div className="container mx-auto py-12">
       <img
         src={require("../../assets/profile picture.jpeg")}
-        alt="Profile Image"
+        alt="Profile"
         className="w-48 h-48 rounded-full mx-auto mb-4"
       />
       <div className="text-center mb-8">
