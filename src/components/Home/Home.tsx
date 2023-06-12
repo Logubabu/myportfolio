@@ -116,10 +116,10 @@ const Home: FC<HomeProps> = () => (
             <FaEnvelope className="mr-2 text-3xl" />
             <span>loganathanrbl@gmail.com</span>
           </a>
-          <a className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300">
+          <div className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300">
             <FaMapMarkerAlt className="mr-2 text-3xl" />
             <span>Chennai</span>
-          </a>
+          </div>
         </div>
         <div className="flex justify-center">
           <a
