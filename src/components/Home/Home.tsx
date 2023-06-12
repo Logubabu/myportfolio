@@ -117,7 +117,7 @@ const Home: FC<HomeProps> = () => (
             <span>loganathanrbl@gmail.com</span>
           </a>
           <a
-            href="#"
+            href=""
             target="_blank"
             rel="noopener noreferrer"
             className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300"
