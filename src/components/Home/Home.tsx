@@ -96,6 +96,7 @@ const Home: FC<HomeProps> = () => (
         <a
           href="tel:+918489808561"
           target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center mr-4 text-white hover:text-gray-300"
         >
           <FaPhone className="mr-2" />
@@ -115,6 +116,7 @@ const Home: FC<HomeProps> = () => (
         <a
           href="http://wa.me/918489808561"
           target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center mr-4 text-white hover:text-gray-300"
         >
           <FaWhatsapp className="text-3xl" />
@@ -122,6 +124,7 @@ const Home: FC<HomeProps> = () => (
         <a
           href="https://www.linkedin.com/in/r-loganathan-120916216/"
           target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center mr-4 text-white hover:text-gray-300"
         >
           <FaLinkedin className="text-3xl" />
@@ -129,6 +132,7 @@ const Home: FC<HomeProps> = () => (
         <a
           href="https://github.com/Logubabu"
           target="_blank"
+          rel="noreferrer"
           className="inline-flex items-center mr-4 text-white hover:text-gray-300"
         >
           <FaGithub className="text-3xl" />
