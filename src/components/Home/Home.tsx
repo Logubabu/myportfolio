@@ -5,6 +5,8 @@ import {
   FaGithub,
   FaLinkedin,
   FaWhatsapp,
+  FaMapMarkerAlt,
+  FaFacebook,
 } from "react-icons/fa";
 
 interface HomeProps {}
@@ -22,9 +24,11 @@ const Home: FC<HomeProps> = () => (
         <h2 className="text-xl">Software Developer</h2>
       </div>
 
-      <div className="mt-12">
-        <h3 className="text-3xl">About Me</h3>
-        <p>
+      <div className="mt-12 text-center">
+        <h3 className="text-3xl mb-4">
+          <u>About Me</u>
+        </h3>
+        <p className="py-4">
           I am a Professional software developer with 1.5 years of experience in
           full-stack web development. Skilled in Python, JavaScript, React, and
           Flutter. Strong problem-solving and communication skills.
@@ -93,53 +97,81 @@ const Home: FC<HomeProps> = () => (
         <u>Contact</u>
       </h1>
       <div className="mt-4">
-        <a
-          href="tel:+918489808561"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center mr-4 text-white hover:text-gray-300"
-        >
-          <FaPhone className="mr-2" />
-          <span>+91 8489808561</span>
-        </a>
-        <br />
-        <a
-          href="mailto:loganathanrbl@gmail.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center mr-4 text-white hover:text-gray-300"
-        >
-          <FaEnvelope className="mr-2" />
-          <span>loganathanrbl@gmail.com</span>
-        </a>
-        <br />
-        <a
-          href="http://wa.me/918489808561"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center mr-4 text-white hover:text-gray-300"
-        >
-          <FaWhatsapp className="text-3xl" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/r-loganathan-120916216/"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center mr-4 text-white hover:text-gray-300"
-        >
-          <FaLinkedin className="text-3xl" />
-        </a>
-        <a
-          href="https://github.com/Logubabu"
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex items-center mr-4 text-white hover:text-gray-300"
-        >
-          <FaGithub className="text-3xl" />
-        </a>
+        <div className="p-4 flex items-center flex-wrap justify-center">
+          <a
+            href="tel:+918489808561"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300"
+          >
+            <FaPhone className="mr-2 text-3xl" />
+            <span>+91 8489808561</span>
+          </a>
+          <a
+            href="mailto:loganathanrbl@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300"
+          >
+            <FaEnvelope className="mr-2 text-3xl" />
+            <span>loganathanrbl@gmail.com</span>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300"
+          >
+            <FaMapMarkerAlt className="mr-2 text-3xl" />
+            <span>Chennai</span>
+          </a>
+        </div>
+        <div className="flex justify-center">
+          <a
+            href="http://wa.me/918489808561"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center mr-4 text-white hover:text-gray-300"
+          >
+            <FaWhatsapp className="text-3xl" />
+          </a>
+          <a
+            href="https://m.facebook.com/profile.php?id=100007833377528"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center mr-4 text-white hover:text-gray-300"
+          >
+            <FaFacebook className="text-3xl" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/r-loganathan-120916216/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center mr-4 text-white hover:text-gray-300"
+          >
+            <FaLinkedin className="text-3xl" />
+          </a>
+          <a
+            href="https://github.com/Logubabu"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex items-center mr-4 text-white hover:text-gray-300"
+          >
+            <FaGithub className="text-3xl" />
+          </a>
+        </div>
       </div>
     </div>
     <br />
+    <footer className="bg-gray-900 py-4 text-white text-center">
+      <p>
+        Copyright © 2023{"  "}
+        <b>
+          <i> Loganathan R. </i>
+        </b>
+        {"  "}© All rights reserved.
+      </p>
+    </footer>
     <br />
   </div>
 );
