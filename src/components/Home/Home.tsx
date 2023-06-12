@@ -116,11 +116,7 @@ const Home: FC<HomeProps> = () => (
             <FaEnvelope className="mr-2 text-3xl" />
             <span>loganathanrbl@gmail.com</span>
           </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300"
-          >
+          <a className="p-2 inline-flex items-center mb-4 md:mr-4 text-white hover:text-gray-300">
             <FaMapMarkerAlt className="mr-2 text-3xl" />
             <span>Chennai</span>
           </a>
@@ -162,7 +158,7 @@ const Home: FC<HomeProps> = () => (
       </div>
     </div>
     <br />
-    <footer className="bg-gray-900 py-4 text-white text-center">
+    <footer className="bg-gray-900 py-3 text-white text-center">
       <p>
         Copyright © 2023{"  "}
         <b>
