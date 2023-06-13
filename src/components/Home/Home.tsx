@@ -13,6 +13,47 @@ interface HomeProps {}
 
 const Home: FC<HomeProps> = () => (
   <div className="bg-gray-900 text-white">
+    <header className="w-full fixed top-0 left-0 z-[var(--z-fixed)] bg-black shadow-md">
+      <nav className="nav bd_grid">
+        <div>
+          <a href="#" className="nav_logo">
+            Loganathan
+          </a>
+        </div>
+        <div className="nav_menu" id="nav_menu">
+          <ul className="nav_list">
+            <li className="nav_items">
+              <a href="#home" className="nav_link active">
+                Home
+              </a>
+            </li>
+            <li className="nav_items">
+              <a href="#about" className="nav_link active">
+                About
+              </a>
+            </li>
+            <li className="nav_items">
+              <a href="#skills" className="nav_link active">
+                Skills
+              </a>
+            </li>
+            <li className="nav_items">
+              <a href="#work" className="nav_link active">
+                Work
+              </a>
+            </li>
+            <li className="nav_items">
+              <a href="#contact" className="nav_link active">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="nav_toggle" id="nav_toggle">
+          <i className="bx bx-menu-alt-right"></i>
+        </div>
+      </nav>
+    </header>
     <div className="container mx-auto py-12">
       <img
         src={require("../../assets/profile picture.jpeg")}
@@ -35,9 +76,11 @@ const Home: FC<HomeProps> = () => (
         </p>
       </div>
 
-      <div className="mt-12">
-        <h3 className="text-3xl">Skills</h3>
-        <ul className="list-disc list-inside">
+      <div className="mt-12 text-center">
+        <h3 className="text-3xl mb-4">
+          <u>Skills</u>
+        </h3>
+        <ul className="list-disc list-inside py-4">
           <li>Python</li>
           <li>Angular</li>
           <li>HTML/CSS</li>
@@ -47,8 +90,10 @@ const Home: FC<HomeProps> = () => (
         </ul>
       </div>
 
-      <div className="mt-12">
-        <h3 className="text-3xl">Experience</h3>
+      <div className="mt-12 text-center">
+        <h3 className="text-3xl mb-4">
+          <u>Experience</u>
+        </h3>
         <ul className="mt-4">
           <li className="mb-4">
             <h4 className="text-xl font-bold">Software Developer</h4>
@@ -76,16 +121,18 @@ const Home: FC<HomeProps> = () => (
         </ul>
       </div>
 
-      <div className="mt-12">
-        <h3 className="text-3xl">Education</h3>
-        <ul>
-          <li className="mt-4">
-            <p className="text-xl">M.Sc. CS</p>
+      <div className="mt-12 text-center">
+        <h3 className="text-3xl">
+          <u>Education</u>
+        </h3>
+        <ul className="flex justify-center">
+          <li className="mt-4 p-5">
+            <p className="text-2xl">M.Sc. CS</p>
             <p className="text-lg">GTN Arts College, Dindigul</p>
             <p className="text-sm">2019-2021 [CGPA-7.55]</p>
           </li>
-          <li className="mt-4">
-            <p className="text-xl">B.Sc. CS</p>
+          <li className="mt-4 p-5">
+            <p className="text-2xl">B.Sc. CS</p>
             <p className="text-lg">GTN Arts College, Dindigul</p>
             <p className="text-sm">2016-2019 [CGPA-6.70]</p>
           </li>
@@ -158,13 +205,37 @@ const Home: FC<HomeProps> = () => (
       </div>
     </div>
     <br />
-    <footer className="bg-gray-900 py-3 text-white text-center">
+    {/* <footer className="bg-gray-900 py-3 text-white text-center">
       <p>
         Copyright © 2023{"  "}
         <b>
           <i> Loganathan R. </i>
         </b>
         {"  "}© All rights reserved.
+      </p>
+    </footer> */}
+    <footer className="bg-[#0e2431] text-white text-center font-semibold py-8">
+      <p className="text-2xl mb-4 animate-fade-down">
+        <i>Loganathan R</i>
+      </p>
+
+      <div className="flex justify-center space-x-4 mb-4  animate__animated animate-fade-down animate__delay-2s">
+        <a href="#" className="text-white text-lg my-2">
+          <i className="bx bxl-facebook-circle"></i>
+        </a>
+        <a href="#" className="text-white text-lg my-2">
+          <i className="bx bxl-instagram"></i>
+        </a>
+        <a href="#" className="text-white text-lg my-2">
+          <i className="bx bxl-twitter"></i>
+        </a>
+        <a href="#" className="text-white text-lg my-2">
+          <i className="bx bxl-github"></i>
+        </a>
+      </div>
+
+      <p data-aos="fade-down" data-aos-delay="650">
+        &#169; {new Date().getFullYear()} copyright all right reserved
       </p>
     </footer>
     <br />
